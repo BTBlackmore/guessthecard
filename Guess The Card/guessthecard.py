@@ -62,4 +62,11 @@ def main():
             break
 
 main()
-print("Thanks for playing!")
+play_again = input("Would you like to play again? (Y/N)")
+
+if play_again.lower() == "y":
+    card, suit = generate_card()
+    full_card = (f"{card} of {suit}")
+    main()
+else:
+    print("Thanks for playing! See you next time.")
