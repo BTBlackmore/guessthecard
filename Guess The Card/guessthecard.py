@@ -38,6 +38,7 @@ def main():
     while still_playing == 1:
         if guess == "I give up!":
             print(f"No worries. My card was {full_card}. Better luck next time!")
+            still_playing -= 1
             break
         elif guess == "hint":
             if hints == 1:
